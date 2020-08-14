@@ -1,0 +1,281 @@
+body {margin:0; padding:0; font-family: Verdana, "Bitstream Vera Sans", "Lucida Grande", sans-serif;}
+header {margin:0; padding:0;background-color: #121212;min-height: 80px;}
+h1 {color: white;font-size: 3.1em;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight: 900;text-align: center;margin: 0;}
+.body {
+	width: 100%;
+	max-width: 1200px;
+	order:2;
+}
+
+.sidebar {
+	width: 30%;
+	max-width: 450px;
+}
+
+.flex-container{
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.CodeMirror {
+	font-size: 16px;
+}
+
+.table td {
+	text-align: left;
+}
+
+.regExMatch0 {
+	background-color: #ADC4CC;
+}
+
+.regExMatch1 {
+	background-color: #9B539C;
+}
+
+.explanation {
+	overflow-x: scroll;
+	align: center;
+	text-align: center;
+}
+
+.collapsible {
+	background-color: #eee;
+	color: black;
+	cursor: pointer;
+	padding: 11px;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.collapsible-active,
+.collapsible:hover {
+	background-color: rgb(105, 105, 105);
+}
+
+.collapsible-content {
+	padding: 0 10px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.editor-container-regexp {
+	display: inline-block;
+	border: 2px solid #bbbbbb;
+	padding: 0px;
+	margin-top: 8px;
+	width: 85.5%;
+	vertical-align: top;
+}
+
+.editor-container {
+    border: 2px solid #bbbbbb;
+    padding: 0px;
+    margin-top: 8px;
+}
+
+
+.flag {
+	text-align: center;
+	display: inline-block;
+	border: 2px solid #bbbbbb;
+	border-width: 2px 2px 2px 0;
+	display: inline-block;
+	width: 13%;
+	margin-top: 8px;
+	vertical-align: top;
+	margin-left:-6px;
+}
+
+.flag:hover {
+	color: white;
+}
+
+.flag:hover::after {
+	color: white;
+}
+
+.regex-quick-section {
+	background-color: #4DAF52;
+	margin: 8px auto 0px auto;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 90%;
+	border-radius: 2px 2px 0px 0px;
+}
+
+.regex-quick-section:hover {
+	background-color: #4DAF52;
+}
+
+.regex-quick-section:after {
+	color: white;
+}
+
+.regex-quick-section:hover::after {
+	color: white;
+}
+
+.regex-quick-content {
+	width: 90%;
+	margin: auto;
+}
+
+.regex-quick-impair {
+	background-color: #4DAF52;
+}
+
+.table {
+	width: 100%;
+}
+
+.regex-quick-first {
+	width: 20%;
+	font-weight: bold;
+}
+
+.regex-quick-second {
+	width: 80%;
+}
+
+#engine {
+	padding: 10px;
+	font-size: 1em;
+	margin-left: 8%;
+}
+
+.editor-msg {
+	min-height: 34px;
+}
+
+#engine label {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.radio {
+	margin: 0.5rem;
+}
+
+.radio input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.radio input[type="radio"]+.radio-label:before {
+	content: "";
+	background: #f4f4f4;
+	border-radius: 100%;
+	border: 1px solid #4DAF52;
+	display: inline-block;
+	width: 1.4em;
+	height: 1.4em;
+	position: relative;
+	top: -0.2em;
+	margin-right: 1em;
+	vertical-align: top;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+.radio input[type="radio"]:checked+.radio-label:before {
+	background-color: #4DAF52;
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+
+.radio input[type="radio"]:focus+.radio-label:before {
+	outline: none;
+	border-color: #4DAF52;
+}
+
+.radio input[type="radio"]:disabled+.radio-label:before {
+	box-shadow: inset 0 0 0 4px #f4f4f4;
+	border-color: #4DAF52;
+	background: #4DAF52;
+}
+
+.radio input[type="radio"]+.radio-label:empty:before {
+	margin-right: 0;
+}
+
+.regex-generate-string {
+	float: right;
+	margin-right: 3px;
+	font-weight: bold;
+}
+
+.regex-space-top {
+	margin-top: 3px;
+}
+
+.regex-pointer {
+	cursor: pointer;
+}
+
+.nolist {
+	list-style-type: none;
+}
+
+	.tab-sub-menu {
+		color: #616161!important;
+		user-select: none;
+		border: none;
+		display: inline-block;
+		padding: 8px 11px;
+		vertical-align: middle;
+		overflow: hidden;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		white-space: nowrap;
+	}
+	.tab-sub-menu:hover {
+		border-bottom-width: 3px;
+		border-bottom-style: solid;
+		border-bottom-color: #bbbbbb;
+	}
+	.tab-sub-menu-select {
+		border-bottom-width: 3px;
+		border-bottom-style: solid;
+	}
+
+	.editor-error {
+    color: red;
+    padding: 8px;
+    background-color: #F6CECE;
+    margin: 10px 0px;
+}
+
+.editor-valid {
+    color: green;
+    padding: 8px;
+    background-color: #D0F5A9;
+    margin: 10px 0px;
+}
+
+@media (max-width:860px) {
+	.body {
+		width: 100%;
+	}
+	.sidebar {
+		width: 100%;
+	}
+
+}
