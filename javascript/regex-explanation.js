@@ -422,7 +422,6 @@ class RegexExplanation {
 						this.readSubstitution(regex);
 					break;
 				case '#':
-						prefix.label = 'Comment';
 						if (regex.regex.indexOf("\n") !== -1 ) {
 							result =new RegexPart( {type:'miscellaneous ', label: "Comment", tag: regex.regex.substring(0, regex.regex.indexOf("\n") + 1)});
 							regex.regex = regex.regex.substring(regex.regex.indexOf("\n")+1);
